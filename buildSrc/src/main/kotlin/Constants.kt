@@ -5,12 +5,10 @@ object Ampere {
 
   private const val PACKAGE = "https://maven.pkg.github.com/Ampere-Mod/ampere"
 
-  fun packageURL(): String {
-    return if (VERSION.endsWith("SNAPSHOT")) {
-      "${PACKAGE}/snapshots"
-    } else {
-      PACKAGE
-    }
+  fun packageURL(): String = if (VERSION.endsWith("SNAPSHOT")) {
+    "${PACKAGE}/snapshots"
+  } else {
+    PACKAGE
   }
 }
 
