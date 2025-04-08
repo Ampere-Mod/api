@@ -2,14 +2,7 @@ object Ampere {
   const val VERSION = "0.1.0-SNAPSHOT"
   const val GROUP = "com.gtlugo.ampere"
   const val REPO = "https://github.com/Ampere-Mod/ampere"
-
-  private const val PACKAGE = "https://maven.pkg.github.com/Ampere-Mod/ampere"
-
-  fun packageURL(): String = if (VERSION.endsWith("SNAPSHOT")) {
-    "${PACKAGE}/snapshots"
-  } else {
-    PACKAGE
-  }
+  const val PACKAGE = "https://maven.pkg.github.com/ampere-mod/ampere"
 }
 
 object Parchment {
