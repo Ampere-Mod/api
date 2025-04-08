@@ -21,7 +21,7 @@ publishing {
   repositories {
     maven {
       name = "GitHubPackages"
-      url = uri(Ampere.PACKAGE)
+      url = uri(Ampere.packageURL())
       credentials {
         username = System.getenv("GITHUB_ACTOR")
         password = System.getenv("GITHUB_TOKEN")
