@@ -1,4 +1,6 @@
 plugins {
+  `java-library`
+  `maven-publish`
   net.neoforged.moddev
 }
 
