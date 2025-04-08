@@ -1,3 +1,5 @@
+import java.net.URI
+
 plugins {
   `java-library`
   `maven-publish`
@@ -21,7 +23,7 @@ publishing {
   repositories {
     maven {
       name = "GitHubPackages"
-      url = uri(Ampere.packageURL())
+      url = URI.create(Ampere.packageURL())
       credentials {
         username = System.getenv("GITHUB_ACTOR")
         password = System.getenv("GITHUB_TOKEN")
