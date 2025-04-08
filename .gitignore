@@ -1,32 +1,48 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# My favorite thing ever is adding new things to a .gitignore without checking if I can optimize it.
 
-# idea
-out
-*.ipr
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+**/build
+**/bin
+**/run
+**/.kotlin
+
+### IntelliJ IDEA ###
+.idea/
 *.iws
 *.iml
-.idea/
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# gradle
-build
-.gradle
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# other
-eclipse
-run
-runs
-run-data
-src/generated/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
 .vscode/
 
-Merged
-
-repo
-
-.architectury-transformer/
+### Mac OS ###
+.DS_Store
+# Ignore Gradle build output directory
+build

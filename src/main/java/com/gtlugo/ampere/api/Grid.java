@@ -1,4 +1,4 @@
-package com.gtlugo.ampere.server;
+package com.gtlugo.ampere.api;
 
 public class Grid {
   private double max_wattage;
