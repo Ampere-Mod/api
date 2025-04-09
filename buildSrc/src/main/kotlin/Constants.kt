@@ -1,8 +1,9 @@
 object Ampere {
+  const val ID = "ampere_api"
   const val VERSION = "0.1.0-SNAPSHOT"
   const val GROUP = "com.gtlugo.ampere.api"
   const val REPO = "https://github.com/Ampere-Mod/api"
-  
+
   private const val PACKAGE = "https://maven.pkg.github.com/ampere-mod/api"
 
   fun packageURL(): String = if (VERSION.endsWith("SNAPSHOT")) {
