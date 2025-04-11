@@ -4,7 +4,7 @@ plugins {
   net.neoforged.moddev
 }
 
-group = "${Ampere.GROUP}.api"
+group = Ampere.GROUP
 version = Ampere.VERSION
 
 dependencies {
